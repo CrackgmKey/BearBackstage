@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>新年手机号活动推广单页html5手机专题单页网站模板源码下载【http://www.lanrenmb.com/HTML5/danye/】</title>
+		<link href="../../../../../https@cdn.bootcss.com/layer/3.1.0/mobile/need/layer.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="../../../../../https@cdn.bootcss.com/layer/3.1.0/mobile/layer.js"></script>
+		<script type="text/javascript" src="js/phone.js"></script>
+	</head>
+	<body>
+		<div class="whole">
+			<div class="__progress__">
+				<div class="__head__img__">
+					<img src="image/head.jpg" />
+				</div>
+				<div class="__progress__iuess__">
+					<div class="__iuess__" style="width:90%"></div>
+				</div>
+			</div>
+			<div class="house-all">
+				<div class="fireworks">
+					<canvas id="fireworks">浏览器不支持canvas</canvas>
+				</div>
+				<div class="house">
+					<img src="image/house.png"  />
+				</div>
+				<div class="__nian">
+					<img src="image/nianshou.png" />
+					<!-- <div id="__div__tips__"></div> -->
+				</div>
+			</div>
+
+			<div id="__box__">
+				<img id="__pao__img__" src="image/pao.png" />
+			</div>
+			
+			<div class="btns">
+				<a class="__hit__"  id="__hit__btn__" href="javascript:void(0)">驱赶</a>
+				<a class="__share__" id="__share__btn__" href="javascript:void(0)">分享</a>
+				<a class="__history__" id="__history__btn__" href="javascript:void(0)">助力</a>
+			</div>
+
+			<!-- 邀请弹窗 -->
+			<div class="__invision__alert__" id="__invision__alert__c__">
+				<div class="__alert__">
+					<div class="__close__" id="__close__btn__">X</div>
+					<div class="__text__">快快邀请好友帮忙驱赶年兽吧～</div>
+					<div class="__btns__">邀请好友</div>
+				</div>
+			</div>
+
+			<!-- 邀请弹窗 -->
+			<div class="__test__alert__ __state__test__show__" id="__test__alert__c__">
+				<div class="__test__">
+					<div class="__detail__">
+						<div class="__phone__">
+							<input type="tel" id="__number__" class="__error" name="__number__" value="" placeholder="请输入您的手机号码" />
+						</div>
+						<div class="__code__">
+							<input type="number" id="__the__code__input__" class="__error" value="" placeholder="验证码" />
+							<button type="button" id="__the__code__" onClick="sendMessage()">获取验证码</button>
+						</div>
+						<div class="__update__" id="__update___">提交</div>
+					</div>
+				</div>
+			</div>
+			
+			<!---拆礼物弹窗  在_gift_box_上添加class __state__gifts___  抽奖弹窗就会出现---> 
+			<div class="_gift_box_" id="__whole">
+				<div class="__box _state_shake_" id="__gift__box__">
+					<img src="image/gift.png"  />
+				</div>
+				<div class="__gifts" id="__gifts__">
+					<div class="__gift__img__">
+						<img id="__gift__img" src="#" />
+					</div>
+					<div class="__gift__title" id="__gift__title__"></div>
+					<div class="__gift__close__" id="__gift__close">X</div>
+				</div>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="js/fireworks.js" ></script>
+		<script type="text/javascript" src="js/nian.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,172 @@
+.overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+a {
+  text-decoration: none;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+input,
+textarea,
+select {
+  outline: none;
+}
+.minInput {
+  border: none;
+  outline: none;
+  font-family: "黑体";
+  background: transparent;
+}
+.border_box {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+}
+i,
+e {
+  font-style: normal;
+}
+a:link {
+  text-decoration: none;
+}
+.TurntablePage .TurntableBox {
+  text-align: center;
+}
+.TurntablePage .TurntableBox .title {
+  text-align: center;
+  color: #333;
+  font-size: 0.48rem;
+  padding-bottom: 0.26666667rem;
+  padding-top: 0.26666667rem;
+}
+.TurntablePage .TurntableBox .turnplate {
+  width: 8.26666667rem;
+  height: 8.26666667rem;
+  margin: 0 auto;
+  position: relative;
+}
+.TurntablePage .TurntableBox .turnplate canvas {
+  width: 100%;
+  height: 100%;
+}
+.TurntablePage .TurntableBox .turnplate img {
+  width: 1.6rem;
+  position: absolute;
+  left: 50%;
+  top: 2.82666667rem;
+  transform: translateX(-50%);
+}
+.TurntablePage .editBox {
+  text-align: center;
+}
+.TurntablePage .editBox a {
+  display: inline-block;
+  padding: 0.13333333rem 0.4rem 0.13333333rem 0.4rem;
+  font-size: 0.34666667rem;
+  border: 1px solid #d2d2d2;
+  border-radius: 0.10666667rem;
+  color: #333;
+  position: relative;
+  z-index: 10000;
+}
+.TurntablePage .editBox .done {
+  border: 1px solid #ff9c22;
+  color: #fff;
+  background: #ff9c22;
+  display: none;
+}
+.TurntablePage .warning {
+  text-align: center;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  font-size: 0.34666667rem;
+  color: #bfbdbd;
+}
+.TurntablePage .editContent {
+  padding-left: 0.37333333rem;
+  padding-right: 0.37333333rem;
+  display: none;
+  padding-bottom: 0.4rem;
+}
+.TurntablePage .editContent h1 {
+  font-size: 0.37333333rem;
+  color: #999;
+  line-height: 0.8rem;
+  padding-top: 0.13333333rem;
+}
+.TurntablePage .editContent .title {
+  border-bottom: 1px solid #e2aa2d;
+  position: relative;
+}
+.TurntablePage .editContent .title input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: "黑体";
+  background: transparent;
+  color: #333;
+  font-size: 0.37333333rem;
+  height: 0.73333333rem;
+}
+.TurntablePage .editContent .title a {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0.24rem;
+  height: 0.32rem;
+  width: 0.32rem;
+  background: url(../images/delete.png) no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+.TurntablePage .editContent .optionBox .options {
+  padding-bottom: 0.13333333rem;
+  border-bottom: 1px solid #e2aa2d;
+  position: relative;
+}
+.TurntablePage .editContent .optionBox .options input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: "黑体";
+  background: transparent;
+  color: #333;
+  font-size: 0.37333333rem;
+  height: 0.73333333rem;
+}
+.TurntablePage .editContent .optionBox .options a {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0.24rem;
+  height: 0.32rem;
+  width: 0.32rem;
+  background: url(../images/delete.png) no-repeat;
+  background-size: 100% 100%;
+  display: none;
+}
+.TurntablePage .editContent .btns {
+  overflow: hidden;
+}
+.TurntablePage .editContent .btns a {
+  padding-top: 0.2rem;
+  font-size: 0.34666667rem;
+  color: #FF9C22;
+  display: inline-block;
+}
+.TurntablePage .editContent .btns .addInput {
+  float: left;
+}
+.TurntablePage .editContent .btns .done {
+  float: right;
+}
