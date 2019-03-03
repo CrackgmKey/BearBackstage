@@ -5,9 +5,10 @@
 
 修改数据库密码以及数据库名称,如下图
   <center class="half">
-    <img src="https://github.com/CrackgmKey/BearBackstage/blob/master/pic/1.png" width="50%"  height="700">
+    <img src="http://123.207.156.197/yg/pic/1.png" width="100%"  height="500">
 </center>
+<br/>
 导入SQL数据库 找到下图文件 导入即可
   <center class="half">
-    <img src="https://github.com/CrackgmKey/BearBackstage/blob/master/pic/2.png" width="50%"  height="700">
+    <img src="http://123.207.156.197/yg/pic/2.png" width="100%"  height="500">
 </center>
