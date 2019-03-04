@@ -148,6 +148,7 @@ $(document).ready(
 		<li  id="6"><div class="icon icon-6"></div><div class="t"><a href="javascript:;">系统管理</a></div><div class="clear"></div></li>
 	</ul>
 		<div class="sub-nav s6">
+			<span><a href="{:url('admin/admingroup/index')}" target="main">管理员设置</a></span>
 			<span class="last"><a href="{:url('admin/configs/index',array('id'=>1))}" target="main">网站设置</a></span>
 
 		</div>
