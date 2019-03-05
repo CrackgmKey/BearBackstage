@@ -20,7 +20,7 @@ class User extends Controller{
             return json(['result'=>'手机号被注册,快换个手机号吧','status'=>"201"]);
         }
         //添加数据
-        $data = ['user_name' =>'咸蛋超人', 'password' => $password,'signature' => '努力每一天','email' => '1171628833@qq.cm','phone' => $phone,'address' => $code,'ran_code' => time(),'score' => '100','group_id' => '1','reg_time' => time(),'log_time' => time(),'account' => '0','audit' => '0'];
+        $data = ['user_name' =>'咸蛋超人', 'password' => $password,'signature' => '努力每一天','email' => '123456789@qq.cm','phone' => $phone,'address' => $code,'ran_code' => time(),'score' => '100','group_id' => '1','reg_time' => time(),'log_time' => time(),'account' => '0','audit' => '0'];
         $result = Db::table('ls_user')->insert($data);
         if($result){
             return json(['result'=>'恭喜您,注册成功','status'=>200]);

@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : 本机
+Source Server         : root
 Source Server Version : 50553
 Source Host           : localhost:3306
 Source Database       : daming
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2019-03-03 10:21:00
+Date: 2019-03-05 08:42:45
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -30,7 +30,7 @@ CREATE TABLE `ls_acate` (
 -- Records of ls_acate
 -- ----------------------------
 INSERT INTO `ls_acate` VALUES ('23', '首页商品轮播', '2');
-INSERT INTO `ls_acate` VALUES ('30', '开屏广告', '4');
+INSERT INTO `ls_acate` VALUES ('30', '  开屏广告', '3');
 
 -- ----------------------------
 -- Table structure for ls_addons
@@ -70,7 +70,7 @@ CREATE TABLE `ls_admin` (
 -- ----------------------------
 -- Records of ls_admin
 -- ----------------------------
-INSERT INTO `ls_admin` VALUES ('1', 'admin', '21232f297a57a5a743894a0e4a801fc3', '1551156180', '127.0.0.1', '1', '2', '');
+INSERT INTO `ls_admin` VALUES ('1', 'admin', '4297f44b13955235245b2497399d7a93', '1551746380', '61.148.245.162', '1', '2', '');
 
 -- ----------------------------
 -- Table structure for ls_adminactlog
@@ -83,85 +83,56 @@ CREATE TABLE `ls_adminactlog` (
   `model` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `act_time` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2016 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=1987 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of ls_adminactlog
 -- ----------------------------
-INSERT INTO `ls_adminactlog` VALUES ('1942', '1', 'add', 'User', '1542860646');
-INSERT INTO `ls_adminactlog` VALUES ('1943', '1', 'add', 'User', '1542860661');
-INSERT INTO `ls_adminactlog` VALUES ('1944', '1', 'add', 'User', '1542860674');
-INSERT INTO `ls_adminactlog` VALUES ('1945', '1', 'add', 'User', '1542864907');
-INSERT INTO `ls_adminactlog` VALUES ('1946', '1', 'del', 'Group', '1542864993');
-INSERT INTO `ls_adminactlog` VALUES ('1947', '1', 'add', 'User', '1543214963');
-INSERT INTO `ls_adminactlog` VALUES ('1948', '1', 'mod', 'User', '1543295817');
-INSERT INTO `ls_adminactlog` VALUES ('1949', '1', 'mod', 'User', '1543295821');
-INSERT INTO `ls_adminactlog` VALUES ('1950', '1', 'del', 'User', '1543296082');
-INSERT INTO `ls_adminactlog` VALUES ('1951', '1', 'mod', 'Group', '1543296190');
-INSERT INTO `ls_adminactlog` VALUES ('1952', '1', 'mod', 'Group', '1543296204');
-INSERT INTO `ls_adminactlog` VALUES ('1953', '1', 'mod', 'Configs', '1543296265');
-INSERT INTO `ls_adminactlog` VALUES ('1954', '1', 'mod', 'User', '1543302087');
-INSERT INTO `ls_adminactlog` VALUES ('1955', '1', 'mod', 'User', '1543462843');
-INSERT INTO `ls_adminactlog` VALUES ('1956', '1', 'add', 'Nav', '1543463016');
-INSERT INTO `ls_adminactlog` VALUES ('1957', '1', 'add', 'Product', '1543463057');
-INSERT INTO `ls_adminactlog` VALUES ('1958', '1', 'add', 'Product', '1543473032');
-INSERT INTO `ls_adminactlog` VALUES ('1959', '1', 'mod', 'Product', '1543543355');
-INSERT INTO `ls_adminactlog` VALUES ('1960', '1', 'mod', 'Product', '1543543376');
-INSERT INTO `ls_adminactlog` VALUES ('1961', '1', 'mod', 'User', '1545356362');
-INSERT INTO `ls_adminactlog` VALUES ('1962', '1', 'mod', 'User', '1545356372');
-INSERT INTO `ls_adminactlog` VALUES ('1963', '1', 'add', 'News', '1545359511');
-INSERT INTO `ls_adminactlog` VALUES ('1964', '1', 'add', 'Nav', '1545359522');
-INSERT INTO `ls_adminactlog` VALUES ('1965', '1', 'mod', 'Nav', '1545359609');
-INSERT INTO `ls_adminactlog` VALUES ('1966', '1', 'mod', 'Adv', '1545359664');
-INSERT INTO `ls_adminactlog` VALUES ('1967', '1', 'del', 'Adv', '1545360724');
-INSERT INTO `ls_adminactlog` VALUES ('1968', '1', 'del', 'Adv', '1545360735');
-INSERT INTO `ls_adminactlog` VALUES ('1969', '1', 'del', 'Adv', '1545360739');
-INSERT INTO `ls_adminactlog` VALUES ('1970', '1', 'del', 'Adv', '1545360743');
-INSERT INTO `ls_adminactlog` VALUES ('1971', '1', 'mod', 'Acate', '1545454420');
-INSERT INTO `ls_adminactlog` VALUES ('1972', '1', 'add', 'Nav', '1545454503');
-INSERT INTO `ls_adminactlog` VALUES ('1973', '1', 'add', 'Nav', '1545454508');
-INSERT INTO `ls_adminactlog` VALUES ('1974', '1', 'add', 'News', '1545454613');
-INSERT INTO `ls_adminactlog` VALUES ('1975', '1', 'del', 'Adv', '1545457294');
-INSERT INTO `ls_adminactlog` VALUES ('1976', '1', 'mod', 'Adv', '1547777869');
-INSERT INTO `ls_adminactlog` VALUES ('1977', '1', 'mod', 'News', '1547778322');
-INSERT INTO `ls_adminactlog` VALUES ('1978', '1', 'mod', 'News', '1547778326');
-INSERT INTO `ls_adminactlog` VALUES ('1979', '1', 'add', 'News', '1547778379');
-INSERT INTO `ls_adminactlog` VALUES ('1980', '1', 'add', 'News', '1547778394');
-INSERT INTO `ls_adminactlog` VALUES ('1981', '1', 'add', 'News', '1547778399');
-INSERT INTO `ls_adminactlog` VALUES ('1982', '1', 'add', 'News', '1547778411');
-INSERT INTO `ls_adminactlog` VALUES ('1983', '1', 'mod', 'Configs', '1550128399');
-INSERT INTO `ls_adminactlog` VALUES ('1984', '1', 'mod', 'Configs', '1550128576');
-INSERT INTO `ls_adminactlog` VALUES ('1985', '1', 'mod', 'Configs', '1550128759');
-INSERT INTO `ls_adminactlog` VALUES ('1986', '1', 'mod', 'Configs', '1550128769');
-INSERT INTO `ls_adminactlog` VALUES ('1987', '1', 'mod', 'Configs', '1550128931');
-INSERT INTO `ls_adminactlog` VALUES ('1988', '1', 'mod', 'Configs', '1550128956');
-INSERT INTO `ls_adminactlog` VALUES ('1989', '1', 'mod', 'Configs', '1550129045');
-INSERT INTO `ls_adminactlog` VALUES ('1990', '1', 'mod', 'Configs', '1550130295');
-INSERT INTO `ls_adminactlog` VALUES ('1991', '1', 'mod', 'Configs', '1550132141');
-INSERT INTO `ls_adminactlog` VALUES ('1992', '1', 'mod', 'Configs', '1550134981');
-INSERT INTO `ls_adminactlog` VALUES ('1993', '1', 'mod', 'Configs', '1550209475');
-INSERT INTO `ls_adminactlog` VALUES ('1994', '1', 'mod', 'Configs', '1550472021');
-INSERT INTO `ls_adminactlog` VALUES ('1995', '1', 'mod', 'Configs', '1550551989');
-INSERT INTO `ls_adminactlog` VALUES ('1996', '1', 'mod', 'Mails', '1550552042');
-INSERT INTO `ls_adminactlog` VALUES ('1997', '1', 'test', 'Mails', '1550552050');
-INSERT INTO `ls_adminactlog` VALUES ('1998', '1', 'del', 'Acate', '1551060965');
-INSERT INTO `ls_adminactlog` VALUES ('1999', '1', 'del', 'Acate', '1551060969');
-INSERT INTO `ls_adminactlog` VALUES ('2000', '1', 'del', 'Acate', '1551060973');
-INSERT INTO `ls_adminactlog` VALUES ('2001', '1', 'del', 'Acate', '1551060978');
-INSERT INTO `ls_adminactlog` VALUES ('2002', '1', 'add', 'Acate', '1551060998');
-INSERT INTO `ls_adminactlog` VALUES ('2003', '1', 'mod', 'Acate', '1551061344');
-INSERT INTO `ls_adminactlog` VALUES ('2004', '1', 'mod', 'Adv', '1551061371');
-INSERT INTO `ls_adminactlog` VALUES ('2005', '1', 'mod', 'Adv', '1551064631');
-INSERT INTO `ls_adminactlog` VALUES ('2006', '1', 'mod', 'Adv', '1551064636');
-INSERT INTO `ls_adminactlog` VALUES ('2007', '1', 'mod', 'Adv', '1551064640');
-INSERT INTO `ls_adminactlog` VALUES ('2008', '1', 'mod', 'Configs', '1551066005');
-INSERT INTO `ls_adminactlog` VALUES ('2009', '1', 'mod', 'Configs', '1551078300');
-INSERT INTO `ls_adminactlog` VALUES ('2010', '1', 'mod', 'Configs', '1551080333');
-INSERT INTO `ls_adminactlog` VALUES ('2011', '1', 'add', 'News', '1551081703');
-INSERT INTO `ls_adminactlog` VALUES ('2012', '1', 'add', 'Nav', '1551081756');
-INSERT INTO `ls_adminactlog` VALUES ('2013', '1', 'mod', 'Nav', '1551081770');
-INSERT INTO `ls_adminactlog` VALUES ('2014', '1', 'mod', 'News', '1551081783');
-INSERT INTO `ls_adminactlog` VALUES ('2015', '1', 'del', 'Acate', '1551156235');
+INSERT INTO `ls_adminactlog` VALUES ('1942', '1', 'add', 'Nav', '1550475595');
+INSERT INTO `ls_adminactlog` VALUES ('1943', '1', 'add', 'News', '1550475607');
+INSERT INTO `ls_adminactlog` VALUES ('1944', '1', 'add', 'News', '1550475613');
+INSERT INTO `ls_adminactlog` VALUES ('1945', '1', 'add', 'News', '1550475625');
+INSERT INTO `ls_adminactlog` VALUES ('1946', '1', 'add', 'News', '1550475630');
+INSERT INTO `ls_adminactlog` VALUES ('1947', '1', 'mod', 'Configs', '1550476189');
+INSERT INTO `ls_adminactlog` VALUES ('1948', '1', 'add', 'News', '1550483919');
+INSERT INTO `ls_adminactlog` VALUES ('1949', '1', 'del', 'User', '1550538142');
+INSERT INTO `ls_adminactlog` VALUES ('1950', '1', 'mod', 'Configs', '1550538246');
+INSERT INTO `ls_adminactlog` VALUES ('1951', '1', 'del', 'User', '1550551104');
+INSERT INTO `ls_adminactlog` VALUES ('1952', '1', 'mod', 'Configs', '1550569602');
+INSERT INTO `ls_adminactlog` VALUES ('1953', '1', 'mod', 'Configs', '1550570119');
+INSERT INTO `ls_adminactlog` VALUES ('1954', '1', 'mod', 'Configs', '1550634334');
+INSERT INTO `ls_adminactlog` VALUES ('1955', '1', 'mod', 'Configs', '1550651883');
+INSERT INTO `ls_adminactlog` VALUES ('1956', '1', 'mod', 'Configs', '1550651961');
+INSERT INTO `ls_adminactlog` VALUES ('1957', '1', 'mod', 'Configs', '1550653827');
+INSERT INTO `ls_adminactlog` VALUES ('1958', '1', 'mod', 'Configs', '1550741239');
+INSERT INTO `ls_adminactlog` VALUES ('1959', '1', 'mod', 'Configs', '1551064289');
+INSERT INTO `ls_adminactlog` VALUES ('1960', '1', 'mod', 'Configs', '1551064295');
+INSERT INTO `ls_adminactlog` VALUES ('1961', '1', 'mod', 'Configs', '1551064364');
+INSERT INTO `ls_adminactlog` VALUES ('1962', '1', 'del', 'Acate', '1551078575');
+INSERT INTO `ls_adminactlog` VALUES ('1963', '1', 'del', 'Acate', '1551079378');
+INSERT INTO `ls_adminactlog` VALUES ('1964', '1', 'del', 'Acate', '1551079383');
+INSERT INTO `ls_adminactlog` VALUES ('1965', '1', 'del', 'Acate', '1551079387');
+INSERT INTO `ls_adminactlog` VALUES ('1966', '1', 'del', 'Acate', '1551079397');
+INSERT INTO `ls_adminactlog` VALUES ('1967', '1', 'del', 'Adv', '1551079403');
+INSERT INTO `ls_adminactlog` VALUES ('1968', '1', 'del', 'Adv', '1551079407');
+INSERT INTO `ls_adminactlog` VALUES ('1969', '1', 'del', 'Adv', '1551079413');
+INSERT INTO `ls_adminactlog` VALUES ('1970', '1', 'mod', 'Acate', '1551079424');
+INSERT INTO `ls_adminactlog` VALUES ('1971', '1', 'mod', 'Adv', '1551082756');
+INSERT INTO `ls_adminactlog` VALUES ('1972', '1', 'mod', 'Adv', '1551082806');
+INSERT INTO `ls_adminactlog` VALUES ('1973', '1', 'mod', 'Adv', '1551082971');
+INSERT INTO `ls_adminactlog` VALUES ('1974', '1', 'add', 'Adv', '1551083021');
+INSERT INTO `ls_adminactlog` VALUES ('1975', '1', 'mod', 'Configs', '1551087969');
+INSERT INTO `ls_adminactlog` VALUES ('1976', '1', 'mod', 'Configs', '1551088240');
+INSERT INTO `ls_adminactlog` VALUES ('1977', '1', 'mod', 'Configs', '1551090000');
+INSERT INTO `ls_adminactlog` VALUES ('1978', '1', 'mod', 'Configs', '1551090392');
+INSERT INTO `ls_adminactlog` VALUES ('1979', '1', 'add', 'Acate', '1551156319');
+INSERT INTO `ls_adminactlog` VALUES ('1980', '1', 'mod', 'Nav', '1551156331');
+INSERT INTO `ls_adminactlog` VALUES ('1981', '1', 'add', 'Nav', '1551156353');
+INSERT INTO `ls_adminactlog` VALUES ('1982', '1', 'add', 'Nav', '1551156360');
+INSERT INTO `ls_adminactlog` VALUES ('1983', '1', 'add', 'News', '1551156391');
+INSERT INTO `ls_adminactlog` VALUES ('1984', '1', 'mod', 'Admin', '1551688492');
+INSERT INTO `ls_adminactlog` VALUES ('1985', '1', 'mod', 'Configs', '1551746421');
+INSERT INTO `ls_adminactlog` VALUES ('1986', '1', 'mod', 'Configs', '1551746471');
 
 -- ----------------------------
 -- Table structure for ls_adminclass
@@ -242,24 +213,22 @@ CREATE TABLE `ls_adminlog` (
   `log_time` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
   `log_ip` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=387 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=386 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of ls_adminlog
 -- ----------------------------
-INSERT INTO `ls_adminlog` VALUES ('374', '1', '1542860540', '127.0.0.1');
-INSERT INTO `ls_adminlog` VALUES ('375', '1', '1543214927', '127.0.0.1');
-INSERT INTO `ls_adminlog` VALUES ('376', '1', '1543295680', '127.0.0.1');
-INSERT INTO `ls_adminlog` VALUES ('377', '1', '1543301262', '127.0.0.1');
-INSERT INTO `ls_adminlog` VALUES ('378', '1', '1543462832', '127.0.0.1');
-INSERT INTO `ls_adminlog` VALUES ('379', '1', '1545356348', '192.168.1.151');
-INSERT INTO `ls_adminlog` VALUES ('380', '1', '1547777836', '192.168.1.134');
-INSERT INTO `ls_adminlog` VALUES ('381', '1', '1550127986', '127.0.0.1');
-INSERT INTO `ls_adminlog` VALUES ('382', '1', '1550209456', '127.0.0.1');
-INSERT INTO `ls_adminlog` VALUES ('383', '1', '1550472009', '0.0.0.0');
-INSERT INTO `ls_adminlog` VALUES ('384', '1', '1550551469', '127.0.0.1');
-INSERT INTO `ls_adminlog` VALUES ('385', '1', '1551060944', '127.0.0.1');
-INSERT INTO `ls_adminlog` VALUES ('386', '1', '1551156180', '127.0.0.1');
+INSERT INTO `ls_adminlog` VALUES ('374', '1', '1550483776', '114.242.249.36');
+INSERT INTO `ls_adminlog` VALUES ('375', '1', '1550634198', '124.202.195.10');
+INSERT INTO `ls_adminlog` VALUES ('376', '1', '1550651468', '124.202.195.10');
+INSERT INTO `ls_adminlog` VALUES ('377', '1', '1550731350', '124.202.195.10');
+INSERT INTO `ls_adminlog` VALUES ('378', '1', '1551064270', '124.202.195.10');
+INSERT INTO `ls_adminlog` VALUES ('379', '1', '1551065120', '60.233.1.135');
+INSERT INTO `ls_adminlog` VALUES ('380', '1', '1551089990', '124.202.195.10');
+INSERT INTO `ls_adminlog` VALUES ('381', '1', '1551156280', '124.202.195.10');
+INSERT INTO `ls_adminlog` VALUES ('383', '1', '1551662191', '61.148.244.86');
+INSERT INTO `ls_adminlog` VALUES ('384', '1', '1551688480', '61.148.244.86');
+INSERT INTO `ls_adminlog` VALUES ('385', '1', '1551746380', '61.148.245.162');
 
 -- ----------------------------
 -- Table structure for ls_adminnode
@@ -423,14 +392,15 @@ CREATE TABLE `ls_adv` (
   `click` int(10) NOT NULL,
   `is_qiniu` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=37 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ls_adv
 -- ----------------------------
-INSERT INTO `ls_adv` VALUES ('31', '品味时尚', '23', '553757100845', '品味时尚', '20171001/27661506871623.jpg', '2', '0', '2', '0');
-INSERT INTO `ls_adv` VALUES ('30', '时尚都市', '23', '553757100845', '时尚都市', '20171001/35671506871629.jpg', '3', '0', '0', '0');
-INSERT INTO `ls_adv` VALUES ('29', '夏日小清新', '23', '553757100845', '35831891036', '20171001/9691506871612.jpg', '1', '0', '1', '0');
+INSERT INTO `ls_adv` VALUES ('37', '巧克力', '23', '586515131650', '品味时尚', '20190225/133351551083021.jpg', '4', '0', '0', '0');
+INSERT INTO `ls_adv` VALUES ('31', '品味时尚', '23', '577394804961', '品味时尚', '20190225/237581551082800.jpg', '2', '0', '2', '0');
+INSERT INTO `ls_adv` VALUES ('30', '时尚都市', '23', '582179456527', '时尚都市', '20190225/144171551082961.jpg', '3', '0', '0', '0');
+INSERT INTO `ls_adv` VALUES ('29', '夏日小清新', '23', '583386762975', '夏日小清新', '20190225/206301551082756.jpg', '1', '0', '1', '0');
 
 -- ----------------------------
 -- Table structure for ls_appraise
@@ -573,7 +543,7 @@ CREATE TABLE `ls_config` (
 -- ----------------------------
 -- Records of ls_config
 -- ----------------------------
-INSERT INTO `ls_config` VALUES ('1', '乐尚商城开源系统', '商城,开源,cms,乐尚,网购', '乐尚商城系统，是一项基于PHP+MYSQL为核心开发的一套免费 + 开源专业商城系统。软件具执行效率高、模板自由切换、后台管理功能方便等诸多优秀特点。', '0', '0', '10', '80', '100', '20171001/198111506866672.png', 'favicon.ico', '20171001/198111506866672.png', '5', '0', '200', '200', 'default', '1.1', '20', '3', '1000', '0', '<div class=\"closed_box\"><div class=\"closed_body_top\">&nbsp;</div><div class=\"closed_body\"><div class=\"content\">网站已关闭<br/>请您稍后访问</div></div><div class=\"closed_shadow\">&nbsp;</div><div class=\"clear\">&nbsp;</div></div>', '123123123', '1171628833', '晋ICP备09007422号', '10', '0', '     1，添加删除信用卡接口。\r\n     2，添加vip认证。\r\n     3，区分自定义消费，\r\n     4，添加放弃任务接口\r\n     5，消费任务手动生成。', '<p>EWEWE</p>', '0', '积分', '1000000', 'rule1.php', '0');
+INSERT INTO `ls_config` VALUES ('1', '乐尚商城开源系统', '商城,开源,cms,乐尚,网购', '乐尚商城系统，是一项基于PHP+MYSQL为核心开发的一套免费 + 开源专业商城系统\r\n\r\n。软件具执行效率高、模板自由切换、后台管理功能方便等诸多优秀特点。', '0', '0', '10', '80', '100', '20171001/198111506866672.png', 'favicon.ico', '20171001/198111506866672.png', '1', '0', '200', '200', 'default', '1.0.6', '30', '3', '1000', '1', '<div class=\"closed_box\"><div class=\"closed_body_top\r\n\r\n\">&nbsp;</div><div class=\"closed_body\"><div class=\"content\">网站已关闭<br/>请您稍后访问</div></div><div class=\"closed_shadow\">&nbsp;</div><div class=\"clear\">&nbsp;</div></div>', '123123123', '123456789', '晋ICP备09007422号', '10', '0', '1:最新版本为1.0.6,非强制更新\r\n2:增加9.9包邮销量排序\r\n3:增加首页轮播图商品跳转\r\n4:如自动更新无效,可手动下载：http://u6.gg/rEKTA\r\n5:1.3版本用户请手动下载更新\r\n6:更新首页左上角图标\r\n7:我的模块增加版本号', '<p>EWEWE</p>', '0', '积分', '1000000', 'rule1.php', '0');
 
 -- ----------------------------
 -- Table structure for ls_consult
@@ -1206,10 +1176,11 @@ CREATE TABLE `ls_group` (
 -- ----------------------------
 -- Records of ls_group
 -- ----------------------------
-INSERT INTO `ls_group` VALUES ('1', '普通会员', '0', '0', '1', '0');
-INSERT INTO `ls_group` VALUES ('2', '白银会员', '1000', '1', '1', '0');
+INSERT INTO `ls_group` VALUES ('1', '普通用户', '0', '0', '1', '0');
+INSERT INTO `ls_group` VALUES ('2', '白银会员', '1000', '1', '1', '1');
 INSERT INTO `ls_group` VALUES ('3', '白金会员', '3000', '1', '2', '0');
-INSERT INTO `ls_group` VALUES ('4', '钻石会员', '7000', '1', '3', '1');
+INSERT INTO `ls_group` VALUES ('4', '钻石用户', '7000', '1', '3', '0');
+INSERT INTO `ls_group` VALUES ('5', '专家会员', '0', '0', '2', '0');
 INSERT INTO `ls_group` VALUES ('8', '中级会员', '10000', '5', '1', '0');
 INSERT INTO `ls_group` VALUES ('9', '高级会员', '15000', '5', '2', '0');
 INSERT INTO `ls_group` VALUES ('10', '特级会员', '25000', '5', '3', '0');
@@ -1283,7 +1254,7 @@ CREATE TABLE `ls_lottery` (
 -- ----------------------------
 -- Records of ls_lottery
 -- ----------------------------
-INSERT INTO `ls_lottery` VALUES ('1', '幸运大转盘', '1', '1', '3');
+INSERT INTO `ls_lottery` VALUES ('1', '幸运大转盘', '1', '1', '5');
 
 -- ----------------------------
 -- Table structure for ls_lotteryitem
@@ -1302,13 +1273,13 @@ CREATE TABLE `ls_lotteryitem` (
 -- ----------------------------
 -- Records of ls_lotteryitem
 -- ----------------------------
-INSERT INTO `ls_lotteryitem` VALUES ('28', '1', '七等奖谢谢参与', '98', '7', '0');
-INSERT INTO `ls_lotteryitem` VALUES ('27', '1', '六等奖谢谢参与', '98', '6', '0');
-INSERT INTO `ls_lotteryitem` VALUES ('26', '1', '五等奖谢谢参与', '98', '5', '0');
-INSERT INTO `ls_lotteryitem` VALUES ('25', '1', '四等奖谢谢参与', '98', '4', '0');
-INSERT INTO `ls_lotteryitem` VALUES ('24', '1', '三等奖谢谢参与', '0', '3', '1');
-INSERT INTO `ls_lotteryitem` VALUES ('23', '1', '二等奖三星手机', '0', '2', '1');
-INSERT INTO `ls_lotteryitem` VALUES ('22', '1', '一等奖电热水器', '0', '1', '1');
+INSERT INTO `ls_lotteryitem` VALUES ('28', '1', '七等奖谢谢参与', '10', '7', '0');
+INSERT INTO `ls_lotteryitem` VALUES ('27', '1', '六等奖谢谢参与', '10', '6', '0');
+INSERT INTO `ls_lotteryitem` VALUES ('26', '1', '五等奖谢谢参与', '10', '5', '0');
+INSERT INTO `ls_lotteryitem` VALUES ('25', '1', '四等奖谢谢参与', '10', '4', '0');
+INSERT INTO `ls_lotteryitem` VALUES ('24', '1', '三等奖谢谢参与', '10', '3', '1');
+INSERT INTO `ls_lotteryitem` VALUES ('23', '1', '二等奖三星手机', '45', '2', '1');
+INSERT INTO `ls_lotteryitem` VALUES ('22', '1', '一等奖电热水器', '5', '1', '1');
 
 -- ----------------------------
 -- Table structure for ls_lotteryrules
@@ -1327,7 +1298,6 @@ CREATE TABLE `ls_lotteryrules` (
 -- ----------------------------
 -- Records of ls_lotteryrules
 -- ----------------------------
-INSERT INTO `ls_lotteryrules` VALUES ('1', '213', '2', '100', '12312', '0');
 
 -- ----------------------------
 -- Table structure for ls_lotteryuser
@@ -1345,7 +1315,6 @@ CREATE TABLE `ls_lotteryuser` (
 -- ----------------------------
 -- Records of ls_lotteryuser
 -- ----------------------------
-INSERT INTO `ls_lotteryuser` VALUES ('1', '61', '1', '432531515', '1000000024');
 
 -- ----------------------------
 -- Table structure for ls_lotterywin
@@ -1360,13 +1329,11 @@ CREATE TABLE `ls_lotterywin` (
   `address` varchar(250) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `create_time` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=55 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=53 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ls_lotterywin
 -- ----------------------------
-INSERT INTO `ls_lotterywin` VALUES ('53', '1', '65', '24', '18812341234', '12143t', '1542860738');
-INSERT INTO `ls_lotterywin` VALUES ('54', '1', '65', '23', '18812341234', '12143t', '1542860753');
 
 -- ----------------------------
 -- Table structure for ls_mailrules
@@ -1414,7 +1381,7 @@ CREATE TABLE `ls_mails` (
 -- ----------------------------
 -- Records of ls_mails
 -- ----------------------------
-INSERT INTO `ls_mails` VALUES ('1', 'smtp.exmail.qq.com', '1977486322', '1419841262ab', '465', '1');
+INSERT INTO `ls_mails` VALUES ('1', 'smtp.exmail.qq.com', '000000', '000000', '465', '1');
 
 -- ----------------------------
 -- Table structure for ls_message
@@ -1487,15 +1454,13 @@ CREATE TABLE `ls_nav` (
   `type` tinyint(1) NOT NULL,
   `display` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=74 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=72 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ls_nav
 -- ----------------------------
-INSERT INTO `ls_nav` VALUES ('70', '积分购', '1', '0', '40', '4', '1');
-INSERT INTO `ls_nav` VALUES ('71', '最新消息', '2', '71', '32', '2', '1');
-INSERT INTO `ls_nav` VALUES ('72', '首页文字轮播', '3', '0', '32', '2', '1');
-INSERT INTO `ls_nav` VALUES ('73', '每日推送', '4', '0', '32', '2', '1');
+INSERT INTO `ls_nav` VALUES ('70', '首页文字轮播', '1', '0', '32', '2', '1');
+INSERT INTO `ls_nav` VALUES ('71', '  每日推送', '2', '0', '32', '2', '1');
 
 -- ----------------------------
 -- Table structure for ls_ncate
@@ -1533,16 +1498,15 @@ CREATE TABLE `ls_news` (
   `recommand` int(11) NOT NULL,
   `is_qiniu` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=68 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ls_news
 -- ----------------------------
-INSERT INTO `ls_news` VALUES ('64', '好劵上线欢迎使用', '72', '2', '<p>惠涛<p>1</p>', '', '1545454613', '0', '1', '0', '0', '0', '0', '0', '0');
-INSERT INTO `ls_news` VALUES ('68', '我们又见面了', '73', '', '<p>123</p>', '', '1551081703', '0', '5', '0', '0', '0', '0', '0', '0');
-INSERT INTO `ls_news` VALUES ('65', '发布测试', '72', '2', '<p>1</p>', '', '1547778379', '0', '2', '0', '0', '0', '0', '0', '0');
-INSERT INTO `ls_news` VALUES ('66', '如果有什么意见可以提交给我', '72', '2', '<p>1</p>', '', '1547778399', '0', '3', '0', '0', '0', '0', '0', '0');
-INSERT INTO `ls_news` VALUES ('67', '谢谢大家', '72', '2', '<p>1</p>', '', '1547778411', '0', '4', '0', '0', '0', '0', '0', '0');
+INSERT INTO `ls_news` VALUES ('64', '欢迎使用', '70', '欢迎使用', '<p>欢迎使用</p>', '', '1550475613', '0', '1', '0', '0', '0', '0', '0', '0');
+INSERT INTO `ls_news` VALUES ('65', '淘宝店铺', '70', '淘宝店铺', '<p>淘宝店铺</p>', '', '1550475630', '0', '2', '0', '0', '0', '0', '0', '0');
+INSERT INTO `ls_news` VALUES ('66', '欢迎张哥帮忙测试', '70', '欢迎张哥帮忙测试', '<p>欢迎张哥帮忙测试</p>', '', '1550483919', '0', '3', '0', '0', '0', '0', '0', '0');
+INSERT INTO `ls_news` VALUES ('67', '我们又见面了', '71', '', '<p>额去问问企鹅</p>', '', '1551156391', '0', '4', '0', '0', '0', '0', '0', '0');
 
 -- ----------------------------
 -- Table structure for ls_orders
@@ -1678,13 +1642,11 @@ CREATE TABLE `ls_product` (
   `user_id` tinyint(1) unsigned NOT NULL,
   `is_qiniu` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=63 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=61 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of ls_product
 -- ----------------------------
-INSERT INTO `ls_product` VALUES ('61', '积分购测试商品', '20171001/35671506871629.png', '20181129/thumb_49651543463057.png', '20181129114417640', '0', '70', '998.00', '0.00', '<p>123</p>', '<p>213</p>', '5000', '0.00', '', '0', '2', '1543463057', '1543543376', '1', '1', '0', '0', '0');
-INSERT INTO `ls_product` VALUES ('62', '积分购测试商品1', '20181130/101931543543355.png', null, '20181129023032172', '0', '70', '998.00', '9.00', '<p>99</p>', '<p>999</p>', '999', '99.00', '', '0', '2', '1543473032', '1543543355', '1', '2', '0', '0', '0');
 
 -- ----------------------------
 -- Table structure for ls_productspec
@@ -1737,16 +1699,6 @@ CREATE TABLE `ls_purchase` (
 -- ----------------------------
 -- Records of ls_purchase
 -- ----------------------------
-INSERT INTO `ls_purchase` VALUES ('4111', '213', '100000001', '99', '215');
-INSERT INTO `ls_purchase` VALUES ('4112', '213', '100000002', '99', '215');
-INSERT INTO `ls_purchase` VALUES ('4113', '213', '100000003', '99', '215');
-INSERT INTO `ls_purchase` VALUES ('4114', '213', '100000004', '99', '215');
-INSERT INTO `ls_purchase` VALUES ('4115', '213', '100000005', '99', '215');
-INSERT INTO `ls_purchase` VALUES ('4116', '213', '100000006', '99', '215');
-INSERT INTO `ls_purchase` VALUES ('4117', '213', '100000007', '99', '215');
-INSERT INTO `ls_purchase` VALUES ('4118', '213', '100000008', '99', '215');
-INSERT INTO `ls_purchase` VALUES ('4119', '213', '100000009', '99', '215');
-INSERT INTO `ls_purchase` VALUES ('4120', '213', '100000010', '99', '215');
 
 -- ----------------------------
 -- Table structure for ls_qiniu
@@ -1888,11 +1840,12 @@ CREATE TABLE `ls_user` (
   `account` int(11) NOT NULL,
   `audit` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=141 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=70 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of ls_user
 -- ----------------------------
+INSERT INTO `ls_user` VALUES ('69', '咸蛋超人', '123', '努力每一天', '1234567@qq.cm', '6666', '777', null, '1551084839', '100', '1', '1551084839', '1551084839', '0', '0');
 
 -- ----------------------------
 -- Table structure for ls_userlog
@@ -1904,14 +1857,10 @@ CREATE TABLE `ls_userlog` (
   `log_time` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
   `log_ip` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=92 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=88 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
 -- Records of ls_userlog
 -- ----------------------------
-INSERT INTO `ls_userlog` VALUES ('86', '65', '1542860703', '127.0.0.1');
-INSERT INTO `ls_userlog` VALUES ('87', '65', '1542860925', '127.0.0.1');
-INSERT INTO `ls_userlog` VALUES ('88', '65', '1542860931', '127.0.0.1');
-INSERT INTO `ls_userlog` VALUES ('89', '65', '1543296074', '127.0.0.1');
-INSERT INTO `ls_userlog` VALUES ('90', '136', '1550551674', '127.0.0.1');
-INSERT INTO `ls_userlog` VALUES ('91', '136', '1550551767', '127.0.0.1');
+INSERT INTO `ls_userlog` VALUES ('86', '69', '1551436879', '111.15.40.71');
+INSERT INTO `ls_userlog` VALUES ('87', '69', '1551436900', '111.15.40.71');
